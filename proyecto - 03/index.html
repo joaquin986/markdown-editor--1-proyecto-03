@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editor Markdown en Vivo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Editor Avanzado de Markdown</h1>
+    <button id="toggle-dark">🌙 Modo Oscuro</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Editor</h2>
+      <textarea id="editor" rows="15" placeholder="Escribe Markdown aquí..."></textarea>
+      <div class="controls">
+        <button id="bold-btn"><strong>B</strong></button>
+        <button id="italic-btn"><em>I</em></button>
+        <button id="clear-btn">🧹 Limpiar</button>
+      </div>
+      <p id="error-msg"></p>
+    </section>
+
+    <section>
+      <h2>Vista previa</h2>
+      <div id="preview"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Proyecto Módulo 3 – Joaquín Mendoza</small>
+  </footer>
+
+  <script src="js/format.js"></script>
+  <script src="js/blocks.js"></script>
+  <script src="js/exceptions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
